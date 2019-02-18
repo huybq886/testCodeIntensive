@@ -1,0 +1,5 @@
+string_list = input("Nhap vao 1 day so cach nhau boi ' ': ")
+num_list = string_list.split(" ")
+print("Day so vua nhap theo chieu nguoc: ")
+for i in range(len(num_list)):
+    print(num_list[-i-1])

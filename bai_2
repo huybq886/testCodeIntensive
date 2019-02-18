@@ -1,0 +1,10 @@
+num_list = input("Nhap vao 1 day so cach nhau boi ' ': ")
+num_list = num_list.split(" ")
+printed_num = []
+for i, i_val in enumerate(num_list):
+    for j, j_val in enumerate(num_list):
+        if (i < j) and (int(i_val) * int(j_val) == 256) and (i_val not in printed_num):
+            print("{0} va {1} tai vi tri {2} va {3}".format(i_val, j_val, i+1, j+1 ))
+            printed_num.append(i_val)
+            printed_num.append(j_val)
+            
